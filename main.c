@@ -1,6 +1,7 @@
 #include <stdio.h>
+#include <stdint.h>
 
-int add(int a,int  b);
+int32_t add(int32_t a,int32_t b);
 
 int main()
 {
