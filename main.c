@@ -2,6 +2,18 @@
 #include <stdlib.h>
 #include "add.h"
 
+/*!
+ * @brief This API does some computation.
+ *
+ * @param[in] argc : Argument count
+ *
+ * @param[in] argv : Array of arguments
+ *
+ * @return Exit code.
+ *
+ * @retval zero -> Success / +ve value -> Warning / -ve value -> Error
+ */
+
 int main(int argc,char *argv[])
 {
   int8_t array[10][2] = {
