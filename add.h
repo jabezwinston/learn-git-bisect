@@ -3,6 +3,8 @@
 
 #include <stdint.h>
 
-int8_t add(int8_t, int8_t);
+typedef int8_t add_operand_t;
+
+add_operand_t add(add_operand_t, add_operand_t);
 
 #endif

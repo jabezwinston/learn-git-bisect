@@ -19,7 +19,7 @@
 
 int main(int argc,char *argv[])
 {
-  int8_t array[MAX_LEN][OPERANDS] = {
+  add_operand_t array[MAX_LEN][OPERANDS] = {
     [0] = {1,2},
     [1] = {2,4},
     [2] = {10,20},

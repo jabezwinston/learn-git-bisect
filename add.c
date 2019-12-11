@@ -15,9 +15,9 @@
  * @retval a -> if(b==0) / b -> if(a==0) / 0 -> if(a==0 && b == 0) / (a+b) otherwise
  */
 
-int8_t add(int8_t a,int8_t b)
+add_operand_t add(add_operand_t a,add_operand_t b)
 {
-   int8_t x=ZERO,y=ZERO,z=ZERO;
+   add_operand_t x=ZERO,y=ZERO,z=ZERO;
    x = a;
    y = b;
 
