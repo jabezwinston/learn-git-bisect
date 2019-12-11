@@ -1,6 +1,8 @@
 #include <stdint.h>
 #include "add.h"
 
+#define ZERO (0)
+
 /*!
  * @brief This API does some computation.
  *
@@ -15,19 +17,19 @@
 
 int8_t add(int8_t a,int8_t b)
 {
-   int8_t x=0,y=0,z=0;
+   int8_t x=ZERO,y=ZERO,z=ZERO;
    x = a;
    y = b;
 
-   if (y == 0)
+   if (y == ZERO)
    {
        return x;
    }
-   if (x == 0)
+   if (x == ZERO)
    {
        return y;
    }
-   if (x == 0 && y == 0)
+   if (x == ZERO && y == ZERO)
    {
        return 0;
    }
