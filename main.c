@@ -6,12 +6,22 @@ int32_t add(int32_t a,int32_t b);
 
 int main(int argc,char *argv[])
 {
-  printf("%d + %d = %d\n",1,2,add(1,2));
-  printf("%d + %d = %d\n",2,4,add(2,4));
-  printf("%d + %d = %d\n",10,20,add(10,20));
-  printf("%d + %d = %d\n",100,30,add(100,30));
-  printf("%d + %d = %d\n",40,53,add(40,53));
-  printf("%d + %d = %d\n",37,43,add(37,43));
-  printf("%d + %d = %d\n",12,23,add(12,23));
+  int32_t array[10][2] = {
+    [0] = {1,2},
+    [1] = {2,4},
+    [2] = {10,20},
+    [3] = {100,30},
+    [4] = {40,53},
+    [5] = {37,43},
+    [6] = {12,23},
+    [7] = {-20,-100},
+    [8] = {-30,150},
+    [9] = {45,-56}
+  };
+
+  for (uint32_t i=0; i < 10;i++)
+    printf("%d + %d = %d\n",array[i][0],array[i][1],add(array[i][0],array[i][1]));
+
   return EXIT_SUCCESS;
 }
+
