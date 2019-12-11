@@ -18,7 +18,9 @@ int main(int argc,char *argv[])
   };
 
   for (uint8_t i=0; i < 10;i++)
+  {
     printf("%d + %d = %d\n",array[i][0],array[i][1],add(array[i][0],array[i][1]));
+  }
 
   return EXIT_SUCCESS;
 }
