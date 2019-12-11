@@ -2,8 +2,6 @@
 #include <stdlib.h>
 #include "add.h"
 
-int32_t add(int32_t a,int32_t b);
-
 int main(int argc,char *argv[])
 {
   int32_t array[10][2] = {
