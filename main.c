@@ -4,7 +4,7 @@
 
 int main(int argc,char *argv[])
 {
-  int32_t array[10][2] = {
+  int8_t array[10][2] = {
     [0] = {1,2},
     [1] = {2,4},
     [2] = {10,20},
@@ -17,7 +17,7 @@ int main(int argc,char *argv[])
     [9] = {45,-56}
   };
 
-  for (uint32_t i=0; i < 10;i++)
+  for (uint8_t i=0; i < 10;i++)
     printf("%d + %d = %d\n",array[i][0],array[i][1],add(array[i][0],array[i][1]));
 
   return EXIT_SUCCESS;

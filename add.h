@@ -3,6 +3,6 @@
 
 #include <stdint.h>
 
-int32_t add(int32_t, int32_t);
+int8_t add(int8_t, int8_t);
 
 #endif
