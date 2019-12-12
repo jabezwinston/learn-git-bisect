@@ -6,7 +6,8 @@
 #define ZERO (0)
 
 typedef int8_t add_operand_t;
+typedef int8_t add_result_t;
 
-add_operand_t add(add_operand_t, add_operand_t);
+add_result_t add(add_operand_t, add_operand_t);
 
 #endif
