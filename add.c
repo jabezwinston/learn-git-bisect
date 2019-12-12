@@ -1,39 +1,40 @@
 #include <stdint.h>
 #include "add.h"
 
-#define ZERO (0)
-
 /*!
  * @brief This API does some computation.
  *
- * @param[in] a : 1st parameter
+ * @param[in] operand_1 : 1st parameter
  *
- * @param[in] b : 2nd parameter
+ * @param[in] operand_2 : 2nd parameter
  *
  * @return Result of computation.
  *
- * @retval a -> if(b==0) / b -> if(a==0) / 0 -> if(a==0 && b == 0) / (a+b) otherwise
+ * @retval operand_1 -> if(operand_2==0) 
+ *         operand_2 -> if(operand_1==0)
+ *         0 -> if(operand_1==0 && operand_2 == 0)
+ *         (operand_1+operand_2) otherwise
  */
 
-add_operand_t add(add_operand_t a,add_operand_t b)
+add_operand_t add(add_operand_t operand_1,add_operand_t operand_2)
 {
-   add_operand_t x=ZERO,y=ZERO,z=ZERO;
-   x = a;
-   y = b;
+   add_operand_t operand_1_temp = ZERO,operand_2_temp=ZERO,result=ZERO;
+   operand_1_temp = operand_1;
+   operand_2_temp = operand_2;
 
-   if (y == ZERO)
+   if (operand_2_temp == ZERO)
    {
-       return x;
+       return operand_1_temp;
    }
-   if (x == ZERO)
+   if (operand_1_temp == ZERO)
    {
-       return y;
+       return operand_2_temp;
    }
-   if (x == ZERO && y == ZERO)
+   if (operand_1_temp == ZERO && operand_2_temp == ZERO)
    {
-       return 0;
+       return ZERO;
    }
 
-   z = x + y;
-   return (z);
+   result = operand_1_temp + operand_2_temp;
+   return (result);
 }

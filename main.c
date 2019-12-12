@@ -19,7 +19,7 @@
 
 int main(int argc,char *argv[])
 {
-  add_operand_t array[MAX_LEN][OPERANDS] = {
+  add_operand_t array_2d[MAX_LEN][OPERANDS] = {
     [0] = {1,2},
     [1] = {2,4},
     [2] = {10,20},
@@ -32,9 +32,9 @@ int main(int argc,char *argv[])
     [9] = {45,-56}
   };
 
-  for (uint8_t i=0; i < MAX_LEN ;i++)
+  for (uint8_t iter = ZERO; iter < MAX_LEN ;iter++)
   {
-    printf("%d + %d = %d\n",array[i][0],array[i][1],add(array[i][0],array[i][1]));
+    printf("%d + %d = %d\n",array_2d[iter][0],array_2d[iter][1],add(array_2d[iter][0],array_2d[iter][1]));
   }
 
   return EXIT_SUCCESS;
